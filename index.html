@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="main.almond.js"></script>
+</head>
+<body>
+<div id="container">
+  <h1>Almond Bug</h1>
+  <p>Note in log:
+    <pre>Uncaught Error: No ../folder/imported </pre>
+  </p>
+</div>
+<script type="text/javascript">
+// Now to load the example
+require(['main'],
+function(main){
+    console.log("Required!");
+});
+</script>
+</body>
+</html>
